@@ -42,7 +42,7 @@ public class Principal {
         Principal principal = new Principal();
         food.add ("Carne");
         food.add ("Pizza");
-        food.add ("Hambuerguesa");
+        food.add ("Hamburguesa");
         food.add ("Boneless");
         food.add ("Tacos");
         food.add ("Pescado");
@@ -81,7 +81,7 @@ public class Principal {
         System.out.println("Ordenamiento alfabetico con expresión Lambda");
         principal.imprimirLista(principal.ordenAlfLambda()); // Alfabeticamente (Lambda)
         System.out.println();
-        System.out.println("Ordenamiento por lomgitud con expresión Lambda");
+        System.out.println("Ordenamiento por longitud con expresión Lambda");
         principal.imprimirLista(principal.ordenLongLambda()); // Longitud (Lambda)
         System.out.println();
 
@@ -100,7 +100,7 @@ public class Principal {
 
     public List<String> ordenLongLambda() { // Lambda ordenar por longitud
         List<String> food = Principal.food;
-        food.sort((str1, str2) -> str1.length() - str2.length());
+        food.sort((f1, f2) -> f1.length() - f2.length());
         return food;
     }
 
